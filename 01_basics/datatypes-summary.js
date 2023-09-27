@@ -80,3 +80,41 @@ console.log(typeof scoreValue );             // typeof outsideTemp is a 'Null' d
 // Go to ECMAScript in 'typesof' oprator and learn it .
 
 //https://tc39.es/ecma262/#sec-typeof-operator
+
+
+//************************************************** Memory ************************************************************************************
+/* There are two types of Memory 
+1. Stack
+2. Heap 
+
+Stack (Primitive )       : Jab bhi stack memory use hoti hai too jo bhi aapne momory locate kiya hai uski copy milti hai . 
+Heap (Non - Primitive)   : aur jab memory heap ke andar define hoti hai jaise koi object too aapko milta hai reference yani original
+                           value. jo bhi change karenge o original value mein change hoga .
+*/
+
+// Example : Stack => eske andar jab hum kuch bhi lenge too uska copy hee milta hai
+
+let myOfficialname = "Adarsh"
+
+let anothername = myOfficialname
+anothername = "Birjesh"
+
+console.log(myOfficialname);
+console.log(anothername);
+
+//Example : Heap => aur jab hum 'Heap' ke andar value rakhte hain to uska refrence yani original value milta hai.
+                    // Rference se mtlb ye hai ki hum jab change karte hai too original value ke andar dekhne ko milta hai.
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "Adarsh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
