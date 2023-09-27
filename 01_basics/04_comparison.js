@@ -15,9 +15,9 @@ karta ki app do different data type ko compare karo.
  TYPESCRIPT : KUCH DIFFICULT RULE DETA HAI  KI AAP AISE KAIYE AUR ESA NA KARIYE */
 
 
-//$console.log(null > 0 ); // output : false 
-//$console.log(null == 0 ); // output : false 
-//$console.log(null >= 0 ); // output : true . Esme JavaScript ne 'null' ko 0 mein convert kar diya hai.
+console.log(null > 0 ); // output : false 
+console.log(null == 0 ); // output : false 
+console.log(null >= 0 ); // output : true . Esme JavaScript ne 'null' ko 0 mein convert kar diya hai.
 
 //Kabhi Null ko NaN  mein convert karta hai aur kabhi 0 mein.
 
@@ -28,9 +28,9 @@ javsscript mein kaam karne ka tarika todha different hot hai.
 
 Comparison convert null to a number it as 0. That's why (3) null >= 0 is true and (1) null >0 is false .*/
 
-//$console.log(undefined == 0 ); // Output : False     
-//$console.log(undefined > 0 );  // output : Fals   
-//$console.log(undefined < 0 );  // output : False
+console.log(undefined == 0 ); // Output : False     
+console.log(undefined > 0 );  // output : Fals   
+console.log(undefined < 0 );  // output : False
 
 // NOTE : Avoid to this type of Conversion .
 
