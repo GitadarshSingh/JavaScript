@@ -21,19 +21,18 @@ const myArr = [0 , 1, 2, 3, 4, 5] // --------- equation (1)
 // Array Methods
 
 //Note : myArr.push() // '.push' add the value into the array. of 'myArr' or 'myHeros' in '.push' section.
-//$myArr.push("8") // Output : [0,1,2,3,4,5,8]
-//$myArr.push("10") // Output : [0,1,2,3,4,5,8]
-//$console.log(myArr); 
+myArr.push("8") // Output : [0,1,2,3,4,5,8]
+myArr.push("10") // Output : [0,1,2,3,4,5,8]
+console.log(myArr); 
 
 //Similarly 
 
-//$myHeros.push("Thor")
-//$console.log(myHeros); // Output : [ 'shaktiman', 'naagraj', 'Thor']
-
+myHeros.push("Thor")
+console.log(myHeros); // Output : [ 'shaktiman', 'naagraj', 'Thor]
 // One more interesting thing
 
-//$myArr.pop() //Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
-//$console.log(myArr); // Output: [ 0, 1, 2,3,4, 5, 8 , (10 is removed from here)]
+myArr.pop() //Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+console.log(myArr); // Output: [ 0, 1, 2,3,4, 5, 8 , (10 is removed from here)]
 
 
 //$myArr.unshift(9) // Elements to insert at the start of the array.
@@ -43,16 +42,16 @@ const myArr = [0 , 1, 2, 3, 4, 5] // --------- equation (1)
 
 //$myArr.shift() //No parameters will give, Removes the first element from an array and returns it
 
-//$console.log((myArr.includes(9)); //The element to search for. Output : false. boz 9 is not existing.
-//$console.log((myArr.includes(3)); // Output : true. boz 9 is existing.
+console.log((myArr.includes(9)); //The element to search for. Output : false. boz 9 is not existing.
+console.log((myArr.includes(3)); // Output : true. boz 9 is existing.
 
-//$console.log(myArr.indexOf(19)); //indexOf(searchElement: number ). The value to locate in the array.Returns the index of the first occurrence of a value in an array, or -1 if it is not present.
+console.log(myArr.indexOf(19)); //indexOf(searchElement: number ). The value to locate in the array.Returns the index of the first occurrence of a value in an array, or -1 if it is not present.
 
 // Interesting Operation and use many times.
 
-//$const newArr = myArr.join() //Adds all the elements of an array into a string, separated by the specified separator string.
-//$console.log(myArr); //typeof : object , output : [ 0, 1, 2, 3, 4, 5 ]
-//$console.log(typeof newArr); //typeof : String , Output: 0,1,2,3,4,5
+const newArr = myArr.join() //Adds all the elements of an array into a string, separated by the specified separator string.
+console.log(myArr); //typeof : object , output : [ 0, 1, 2, 3, 4, 5 ]
+console.log(typeof newArr); //typeof : String , Output: 0,1,2,3,4,5
 
 //Important thing interview purpose
 // slice , splice 
