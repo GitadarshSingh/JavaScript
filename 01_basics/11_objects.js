@@ -64,16 +64,60 @@ const User = [
 // Aage chal kar hum dekhenge ki prijects mein ki Array ke andar kafi ssari values aa rahi hai unko loop karna hai too oha par use karenge.
 
 User[1].email
-console.log(tinderUser);
+//$console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // Output: [ 'id', 'name', 'isLoggedIn' ] it is an array.
+//$console.log(Object.keys(tinderUser)); // Output: [ 'id', 'name', 'isLoggedIn' ] it is an array.
 // Further we need to use more remember it.We can also loop it.
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+//$console.log(Object.values(tinderUser));
+//$console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+//$console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 //hasOwnProperty : Determines whether an object has a property with the specified name.@param v — A property name.
 
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "Adarsh"
+}
+// How to use value
+
+//course.courseInstructor
+
+//Suppose aapko neat & clean banana hai.
+// Maan lo aap 3 baar course ki value chaiye jaise 1. coursename, 2.price and so on aur baar baar dot'.' course likhne ek leangthy process hain
+// so we can use below syntax.
+
+const {courseInstructor:Instructor} = course
+// If you want too courseInstructor: Instructor name de skt ho aur print kra skt only use 'Instructor'
+//console.log(courseInstructor); // Output : Adarsh
+
+console.log(Instructor); // Same Output : Adarsh
+
+// Basically JASON is simlar to the objects not exact or 100 % object.
+
+// In object you will seed some name of objects are given that but in 'JASON' there is no name of ojects.
+
+{
+    "name": "Adarsh",
+    "coursename": "js in hindi",
+    "price": "free"
+}
+// Some error are given out but don't worry syntax is absolutely right.
+
+// API
+// Sometimes array you got in in the form of array. like below
+[
+    {},
+    {},
+    {},
+    
+]
+
+// Jaise aapko 'API' samajhne ke liye aapko 'randomuser me api' visit karna padega or visit through this link : https://randomuser.me/
 
