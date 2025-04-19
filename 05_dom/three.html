@@ -13,16 +13,17 @@
     const div = document.createElement('div')
     console.log(div);
     div.className = "main"
-    div.id = Math.round(Math.random() * 10 + 1)
+    div.id = Math.round(Math.random()*10+1)
+    //Attribute : id , src, href, class, title 
     div.setAttribute("title", "generated title")
-    div.style.backgroundColor = "green"
-    div.style.padong = "12px"
-    // 
-    // div.innerText = "Chai aur Code"
-    const addText = document.createTextNode("Adarsh Kumar Singh")
+    div.style.backgroundColor = "red"
+    div.style.padding = "10px"
+     
+     //div.innerText = "Chai aur Code"
+     const addText = document.createTextNode("Adarsh Kumar Singh")
     div.appendChild(addText)
 
-    // Page is Empty now the we will going to attached with page
+    // // Page is Empty now the we will going to attached with page
     document.body.appendChild(div)
 
 </script>

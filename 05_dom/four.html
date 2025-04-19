@@ -1,3 +1,4 @@
+<!-- Edit and remove DOM elemnts  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     0">
     <title>Adarsh Kumar Singh | DOM</title>
 </head>
-<body>
+<body style = "background-color:#212121;color:#fff;">
     <ul class="laungage">
         <li>Javascript</li>
     </ul>
@@ -17,21 +18,22 @@
           // Function mein list add karne ke liye pass the language name 'LangName'
           // How to design
           //1. Create a list item, 2. Select, ul and append it
-    function addLanguage(LangName){                   
+    function addLanguage(langName){                   
         const li = document.createElement('li');  
-        li.innerHTML = `${LangName}`
+        li.innerHTML = `${langName}`// pura dom tree travel karna padhg rha hai
         // Kuch nhi show hoga kyuki link nhi kiya abhi tk
         document.querSelector('.language').
-        appendChild(li)
+        appendChild(li) 
     }
     addLanguage("python")
     addLanguage("typescript")
 
-// Humne above and below given function se value add ki but different itna hain ki below function ka method todha 'optimized' hain 
-// Because below function mein aapko pura 'Tree' traverse nhi larna padh rha long project ke below function follow kariye
-    function addOptiLanguage(langName){
+//Humne above and below given function se value add ki but different itna hain ki below function ka method todha 'optimized' hain 
+//Because below function mein aapko pura 'Tree' traverse nhi karna padh rha long project ke below function follow kariye
+//'li' ko dobara  esliye declare kiya boz humne function ke andar 'li' ko declare  kiya hai, upar wala function mein .
+function addOptiLanguage(langName){
         const li = document.createElement('li')
-        li.appendChild(document.createElement(langName))
+        li.appendChild(document.createTextNode(langName))
         document.querySelector('.language').appendChild(li)
     }
     addOptiLanguage('golang')
